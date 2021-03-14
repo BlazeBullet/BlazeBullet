@@ -1,4 +1,4 @@
-![Logo](https://i.ibb.co/Sy5ZrgZ/default.png)
+<img src = "https://i.ibb.co/Sy5ZrgZ/default.png" width="150" height="150"> 
 
 # BlazeBullet - A Modded Client for OpenBullet 2
 
