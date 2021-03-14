@@ -1,11 +1,11 @@
-<style>
+<styles>
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-</style>
+</styles>
 <img src = "https://i.ibb.co/Sy5ZrgZ/default.png" width="450" height="450" class="center"> 
 
 # BlazeBullet - A Modded Client for OpenBullet 2
