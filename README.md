@@ -1,7 +1,4 @@
-<img src = "https://i.ibb.co/Sy5ZrgZ/default.png" width="450" height="450" style="  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;"> 
+<p align="center"><img src = "https://i.ibb.co/Sy5ZrgZ/default.png" width="450" height="450"></p> 
 
 # BlazeBullet - A Modded Client for OpenBullet 2
 
