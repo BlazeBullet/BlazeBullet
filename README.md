@@ -1,4 +1,4 @@
-![Logo](https://i.imgur.com/sToEkJC.png)
+![Logo](https://i.ibb.co/Sy5ZrgZ/default.png)
 
 # BlazeBullet - A Modded Client for OpenBullet 2
 
