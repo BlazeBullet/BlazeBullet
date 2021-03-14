@@ -1,0 +1,2 @@
+electronize start /watch
+PAUSE
