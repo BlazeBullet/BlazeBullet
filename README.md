@@ -1,4 +1,4 @@
-<p align="center"><img src = "https://i.ibb.co/wyDCfyt/cover.png"></p> 
+<p align="center"><img src="https://i.ibb.co/wyDCfyt/cover.png"></p> 
 
 # BlazeBullet - A Modded Client for OpenBullet 2
 
@@ -6,16 +6,17 @@ Welcome to the home of BlazeBullet
 
 ## Features
 
-    Added PWA
-    Removed ElectronNET
-    Removed Electron Shell
+    Progressive Web App
+    Plugin Store
+    Config Store
+    Theme Store
 
 ## Installation and Usage
 
 ```
 Step 1. Install the latest build
 Step 2. Run OpenBullet2 as usual
-Step 3. Install the PWA in the URL bar (one time)
+Step 3. Install the PWA in the URL bar (one time, leaves icon on desktop)
 Step 4. Enjoy!
 ```
 
