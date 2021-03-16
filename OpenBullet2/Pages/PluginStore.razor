@@ -1,0 +1,12 @@
+﻿@page "/pluginstore"
+@inject Microsoft.Extensions.Localization.IStringLocalizer<PluginStore> Loc
+@attribute [Authorize(Roles = "Admin")]
+
+<h3>@Loc["Plugin Store"]</h3>
+
+<h5><br />Welcome to the Plugin Store, here you can download popular plugins at the click of a button :). If you would like to add a plugin to this, please follow the README.md on the <a href="https://github.com/BlazeBullet/store">Offical Store Repository</a></h5>
+
+<div class="store">
+    <button class="btn btn-sm btn-outline-primary" onclick="loadplugins()">@Loc["Load Plugins"]</button>
+    
+</div>
