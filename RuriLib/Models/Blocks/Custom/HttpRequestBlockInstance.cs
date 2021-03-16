@@ -307,6 +307,7 @@ namespace RuriLib.Models.Blocks.Custom
                     writer.Write("HttpRequestStandard(data, new StandardHttpRequestOptions { ");
                     writer.Write("Content = " + CSharpWriter.FromSetting(x.Content) + ", ");
                     writer.Write("ContentType = " + CSharpWriter.FromSetting(x.ContentType) + ", ");
+                    writer.Write("UrlEncodeContent = " + GetSettingValue("urlEncodeContent") + ", ");
                     break;
 
                 case RawRequestParams x:
@@ -332,13 +333,14 @@ namespace RuriLib.Models.Blocks.Custom
             writer.Write("Method = " + GetSettingValue("method") + ", ");
             writer.Write("AutoRedirect = " + GetSettingValue("autoRedirect") + ", ");
             writer.Write("MaxNumberOfRedirects = " + GetSettingValue("maxNumberOfRedirects") + ", ");
-            writer.Write("UrlEncodeContent = " + GetSettingValue("urlEncodeContent") + ", ");
             writer.Write("AbsoluteUriInFirstLine = " + GetSettingValue("absoluteUriInFirstLine") + ", ");
             writer.Write("SecurityProtocol = " + GetSettingValue("securityProtocol") + ", ");
             writer.Write("CustomCookies = " + GetSettingValue("customCookies") + ", ");
             writer.Write("CustomHeaders = " + GetSettingValue("customHeaders") + ", ");
             writer.Write("TimeoutMilliseconds = " + GetSettingValue("timeoutMilliseconds") + ", ");
             writer.Write("HttpVersion = " + GetSettingValue("httpVersion") + ", ");
+            writer.Write("CodePagesEncoding = " + GetSettingValue("codePagesEncoding") + ", ");
+            writer.Write("AlwaysSendContent = " + GetSettingValue("alwaysSendContent") + ", ");
             writer.Write("UseCustomCipherSuites = " + GetSettingValue("useCustomCipherSuites") + ", ");
             writer.Write("CustomCipherSuites = " + GetSettingValue("customCipherSuites") + " ");
 
