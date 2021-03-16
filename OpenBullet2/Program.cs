@@ -17,7 +17,7 @@ namespace OpenBullet2
         public static void Main(string[] args)
         {
             // Write the disclaimer
-            Console.WriteLine("Welcome to OpenBullet 2!");
+            Console.WriteLine("Welcome to BlazeBullet!");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(@"
 ----------
