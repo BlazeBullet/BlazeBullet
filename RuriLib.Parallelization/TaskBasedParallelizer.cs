@@ -78,12 +78,19 @@ namespace RuriLib.Parallelization
             Status = ParallelizerStatus.Stopping;
             hardCTS.Cancel();
             softCTS.Cancel();
+            await WaitCompletion().ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
         public async override Task ChangeDegreeOfParallelism(int newValue)
         {
             await base.ChangeDegreeOfParallelism(newValue);
+
+            if (Status == ParallelizerStatus.Paused)
+            {
+                savedDOP = newValue;
+                return;
+            }
 
             if (newValue == degreeOfParallelism)
             {
@@ -195,6 +202,9 @@ namespace RuriLib.Parallelization
             {
                 OnCompleted();
                 Status = ParallelizerStatus.Idle;
+                hardCTS.Dispose();
+                softCTS.Dispose();
+                semaphore.Dispose();
             }
         }
         #endregion

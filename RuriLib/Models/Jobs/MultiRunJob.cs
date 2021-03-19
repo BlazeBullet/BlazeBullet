@@ -437,6 +437,7 @@ namespace RuriLib.Models.Jobs
             parallelizer.Error += PropagateError;
             parallelizer.NewResult += PropagateResult;
             parallelizer.Completed += PropagateCompleted;
+            parallelizer.Completed += (s, e) => Skip += DataTested;
 
             ResetStats();
             StartTimers();
@@ -449,7 +450,6 @@ namespace RuriLib.Models.Jobs
             try
             {
                 await parallelizer?.Stop();
-                Skip += DataTested;
             }
             finally
             {
@@ -463,7 +463,6 @@ namespace RuriLib.Models.Jobs
             try
             {
                 await parallelizer?.Abort();
-                Skip += DataTested;
             }
             finally
             {
